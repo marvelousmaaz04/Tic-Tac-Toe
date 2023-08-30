@@ -38,12 +38,7 @@ const checkWin = () => {
                 
                 gameover.play();
 
-                setTimeout(() => {
-                    let rematch = confirm("Want to play again?");
-                    if(rematch){
-                        window.location.reload();
-                    }
-                },2000);
+                
             }
         }
     })
