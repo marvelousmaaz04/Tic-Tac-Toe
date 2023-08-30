@@ -37,6 +37,13 @@ const checkWin = () => {
                 document.querySelector('.line').style.width = "25vw";
                 
                 gameover.play();
+
+                setTimeout(() => {
+                    let rematch = confirm("Want to play again?");
+                    if(rematch){
+                        window.location.reload();
+                    }
+                },2000);
             }
         }
     })
